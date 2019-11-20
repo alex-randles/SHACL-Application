@@ -1,0 +1,20 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.com/people/GoldPrices/420>
+        <http://www.example.com/people/data/ValueChange>
+                "increased"@^^xsd:string .
+
+<http://www.example.com/people/GoldPrices/175>
+        <http://www.example.com/people/data/ValueChange>
+                "increased"@^^xsd:string .
+
+<http://www.example.com/people/GoldPrices/673>
+        <http://www.example.com/people/data/ValueChange>
+                "decreased"@^^xsd:string .
+
+<http://www.example.com/people/GoldPrices/129>
+        <http://www.example.com/people/data/ValueChange>
+                "increased"@^^xsd:string .

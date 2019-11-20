@@ -1,0 +1,23 @@
+@base <http://example.org/>
+@prefix ex: <http://www.example.com/people/data/>.
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+ex:CircumferenceShape
+	a sh:NodeShape ;
+	sh:targetClass ex:GoldPrice ;
+	
+	# THIS IS TO DEMONSTRATE RULES
+
+	sh:rule [
+		a sh:JSRule ;
+		sh:jsFunctionName "color" ;
+		sh:jsLibrary [ sh:jsLibraryURL "file:///home/alex/Desktop/calculate_distance/resources/circumference.js"^^xsd:anyURI ] ;
+	] ;
+
+	
+	# THIS IS FOR THE VALIDATION PART OF THE CODE
+	# END VALIDATION
+	.

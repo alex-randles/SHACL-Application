@@ -1,0 +1,27 @@
+<http://www.example.com/people/GoldPrices/673>
+        a       <http://www.example.com/people/data/GoldPrice> ;
+        <http://www.example.com/people/data/Date>
+                "2006-02" ;
+        <http://www.example.com/people/data/Price>
+                "555.518" .
+
+<http://www.example.com/people/GoldPrices/129>
+        a       <http://www.example.com/people/data/GoldPrice> ;
+        <http://www.example.com/people/data/Date>
+                "1960-10" ;
+        <http://www.example.com/people/data/Price>
+                "35.78" .
+
+<http://www.example.com/people/GoldPrices/420>
+        a       <http://www.example.com/people/data/GoldPrice> ;
+        <http://www.example.com/people/data/Date>
+                "1985-01" ;
+        <http://www.example.com/people/data/Price>
+                "302.85200000000003" .
+
+<http://www.example.com/people/GoldPrices/175>
+        a       <http://www.example.com/people/data/GoldPrice> ;
+        <http://www.example.com/people/data/Date>
+                "1964-08" ;
+        <http://www.example.com/people/data/Price>
+                "35.08" .

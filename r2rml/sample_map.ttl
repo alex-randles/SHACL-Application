@@ -1,0 +1,36 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix testv: <http://www.example.com/people/data/>.
+@prefix testd: <http://www.txample.com/people/data/>.
+
+
+<#Test>
+ 
+	rr:logicalTable [ rr:tableName "GOLD_PRICES"];
+		
+	rr:subjectMap [
+		rr:template "http://www.example.com/people/GoldPrices/{ID}";
+		rr:termType rr:IRI;
+		rr:class testv:GoldPrice ;
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate testv:Date ;
+		rr:objectMap  [ 
+			rr:column "DATE";
+			rr:termType rr:Literal;
+		];		
+   ];
+   
+   	rr:predicateObjectMap [
+		rr:predicate testv:Price ;
+		rr:objectMap  [ 
+			rr:column "PRICE";
+			rr:termType rr:Literal;
+		];		
+   ];
+   
+.
